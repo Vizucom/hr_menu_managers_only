@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- Remove base.group_hr_user and base.group_user from groups -->
+        <record id="hr.menu_hr_root" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6,0,[ref('base.group_hr_manager')])]"/>
+        </record>
+    </data>
+</openerp>        
